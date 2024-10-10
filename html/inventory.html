@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Inventory</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/jpg" href="../Images/bike.png">
+</head>
+
+<body class="myBody">
+
+    <!-- Nav bar start -->
+    <nav id="myNavv" class="myNavv">
+        <div class="logo">
+            <h2>PJ'S BIKE STORE</h2>
+        </div>
+        <div class="myNav">
+            <a href="./dashBoard.html">Dashboard</a>
+            <a href="./bikeDescription.html">Bike Description </a>
+            <a href="./inventory.html">Bike Inventory</a>
+            <a href="./Request.html">Request from Customer</a>
+            <a href="./alertSystem.html">Alert System</a>
+        </div>
+    </nav>
+    <!-- Nav bar end -->
+
+
+    <div class="selectedBike" >
+        <img src="../Images/pexels-matt-jerome-connor-1428905-14242276.jpg" width="50%" height="100%"
+            style="margin-left: 0%; margin-top: 0; ">
+        <div class="bikeDetails">
+            <form style="display: inline-block; margin-top: 9%; margin-left: 5%;" id="bikeAdd">
+                <tr>
+                    <td><label for="bikeRegNo" style="margin-top: 30px;">Bike Reg No</label></td>
+                    <td><input type="number" name="bikeRegNo" id="bikeRegNo" placeholder="Bike Reg No" required></td>
+                </tr>
+                <tr>
+                    <td><label for="bikeModel">Bike Name</label></td>
+                    <td><input type="text" name="bikeModel" id="bikeModel" placeholder="Bike Model" required></td>
+                </tr>
+                
+                <tr>
+                    <td><label for="bikeType">Bike Type</label></td>
+                    <td><input type="text" name="bikeType" id="bikeType" placeholder="Bike Type" required></td>
+                </tr>
+                <tr>
+                    <td><label for="year">Year</label></td>
+                    <td><input type="number" name="year" id="year" placeholder="Year of bike inventory" required></td>
+                </tr>
+                <tr>
+                    <td><label for="rentHour">Rent per hour</label></td>
+                    <td><input type="text" name="rentHour" id="rentHour" placeholder="Rent per hour" required></td>
+                </tr>
+                <tr>
+                    <td><label for="bikeImage">Image</label></td>
+                    <td><input type="file" name="bikeImage" id="bikeImage" accept=".jpg, .jpeg, .png" required></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button type="submit" id="bikeAddbtn">Add</button></td>
+                </tr>
+            </form>
+            <p style="color: blue;" id="createMsg"></p>
+        </div>
+    </div>
+
+    <!-- <footer class="myFooter">
+        <p>All Rights Reserved.Copyrights &copy; PJ_Store 2024.</p>
+    </footer> -->
+
+    <script src="../Js/inventory.js"></script>
+</body>
+
+</html>

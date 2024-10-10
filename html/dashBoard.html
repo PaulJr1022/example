@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/jpg" href="../Images/dashboard.jpg">
+
+</head>
+
+<body class="otherBody">
+
+    <!-- Nav bar start -->
+    <nav id="myNavv" class="myNavv">
+        <div class="logo">
+            <h2>PJ'S BIKE STORE</h2>
+        </div>
+        <div class="myNav">
+            <a href="./dashBoard.html">Dashboard</a>
+            <a href="./bikeDescription.html">Bike Description </a>
+            <a href="./inventory.html">Bike Inventory</a>
+            <a href="./Request.html">Request from Customer</a>
+            <a href="./alertSystem.html">Alert System</a>
+        </div>
+    </nav>
+    <!-- Nav bar end -->
+
+
+    <!-- Bike counts in table method start -->
+    <section id="dashboard">
+        <h2>OVERVIEW</h2>
+        <div class="card">
+            <h3>Total Bikes</h3>
+            <p>120</p>
+        </div>
+        <div class="card">
+            <h3>Available Bikes</h3>
+            <p>85</p>
+        </div>
+        <div class="card">
+            <h3>Rented Bikes</h3>
+            <p>35</p>
+        </div>
+    </section>
+    <section id="bikes">
+        <h2>BIKES LIST</h2>
+        <table class="dashTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Model</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Mountain Bike</td>
+                    <td>Available</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Road Bike</td>
+                    <td>Rented</td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- Bike counts in table method end -->
+
+        <!-- Who rent bike description start -->
+    </section>
+    <section id="rentals">
+        <h2>CURRENT RENTAL</h2>
+       <table>
+        <tr>
+            <th>Bike ID</th>
+            <th>Bike Name</th>
+            <th>Rented By</th>
+        </tr>
+        <tr>
+            <td>001</td>
+            <td>Royal Enfiel</td>
+            <td>Shanthosh</td>
+        </tr>
+       </table>
+    </section>
+    <!-- Who rent bike description end -->
+
+    <!-- Footer -->
+    <footer>
+        <p style="color: white; text-align: center;">All Rights Reserved.Copyrights &copy; PJ_Store 2024.</p>
+    </footer>
+</body>
+
+</html>

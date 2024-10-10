@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Request</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/jpg" href="../Images/demand.png">
+</head>
+
+<body class="myBody">
+
+    <!-- Nav bar start -->
+    <nav id="myNavv" class="myNavv">
+        <div class="logo">
+            <h2>PJ'S BIKE STORE</h2>
+        </div>
+        <div class="myNav">
+            <a href="./dashBoard.html" class="nav-item">Dashboard</a>
+            <a href="./bikeDescription.html"  class="nav-item">Bike Description </a>
+            <a href="./inventory.html"  class="nav-item">Bike Inventory</a>
+            <a href="./Request.html"  class="nav-item">Request from Customer</a>
+            <a href="./alertSystem.html"  class="nav-item">Alert System</a>
+        </div>
+    </nav>
+    <!-- Nav bar end -->
+
+
+    <table class="customersTable">
+        <thead>
+            <tr>
+                <th>User Name</th>
+                <th>Bike Reg No</th>
+                <th>Bike Name</th>
+                <th>From</th>
+                <th>To</th>
+                <th>Accept/Reject</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+            <tr>
+                <td>User 1</td>
+                <td>001</td>
+                <td>Royal Enfield</td>
+                <td>today <br> </td>
+                <td>Tomorrow</td>
+                <td>
+                    <button id="btn1" onclick="Accept()">Accept</button>
+                    <button id="btn2" onclick="Reject()"> Reject</button>
+                </td>
+            </tr>
+        </tbody>
+        <!-- <tr>
+            <td>User 1</td>
+            <td>001</td>
+            <td>Royal Enfield</td>
+            <td>today</td>
+            <td>Tomorrow</td>
+            <td>
+                <button>Accept</button>
+                <button>Reject</button>
+            </td>
+        </tr>
+        <tr>
+            <td>User 1</td>
+            <td>001</td>
+            <td>Royal Enfield</td>
+            <td>today</td>
+            <td>Tomorrow</td>
+            <td>
+                <button>Accept</button>
+                <button>Reject</button>
+            </td>
+        </tr> -->
+    </table>
+
+    <footer class="myFooter">
+        <p>All Rights Reserved.Copyrights &copy; PJ_Store 2024.</p>
+    </footer>
+
+    <script src="../Js/request.js"></script>
+</body>
+
+</html>

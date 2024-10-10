@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike_Renting</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/jpg" href="../Images/bike.png">
+</head>
+<body class="myBody">
+
+    <!-- Nav bar start -->
+    <nav id="myNavv" class="myNavv">
+        <div class="logo">
+            <h2>PJ'S BIKE STORE</h2>
+        </div>
+        <div class="myNav">
+            <a href="./home.html">Home</a>
+            <a href="./bikeDescription.html">Bike Description </a>
+            <a href="./bike_Rent.html">For Rent</a>
+            <a href="#">More</a>
+        </div>
+    </nav>
+    <!-- Nav bar end -->
+
+    <!-- Selected Bike Details -->
+    <div class="selectedBike" id="selectedBike">
+       <div id="selectedBikeDetails">
+        <img src="#" id="viewImage" alt="Selected Bike" loading="lazy" width="250" height="300" title="Your Selected Bike">
+        <div class="bikeDetails">
+            <table>
+                <tr>
+                    <td><label for="Text">Bike Reg No </label> </td>
+                    <td> <input type="number" name="" id=""></td>
+                </tr>
+                <tr>
+                    <td><label for="Text">Bike Name</label></td>
+                    <td><input type="text" name="" id=""> </td>
+                </tr>
+                <tr>
+                    <td><label for="Text">Model</label></td>
+                    <td><input type="text" name="" id=""></td>
+                </tr>
+                <tr>
+                    <td><label for="Text">From</label></td>
+                    <td><input type="datetime-local"> </td>
+                </tr>   
+                <tr>
+                    <td><label for="Text">To</label></td>
+                    <td><input type="datetime-local" name="" id=""></td>
+                </tr> 
+                <tr>
+                    <td><label for="Text">Rent per hour</label></td>
+                    <td> <input type="number"></td> <br> 
+                </tr> <br>
+               
+                <tr>
+                    <td>    </td>
+                    <td><button onclick="confirmBuy()">Confirm To Buy</button></td>
+                </tr>
+            </table>
+            
+            <h3 style="display: block;">Wait You Will Recive Confirmed Notification....</h3>
+           
+        </div>
+       </div>
+    </div>
+
+    <footer >
+        <p>All Rights Reserved.Copyrights &copy; PJ_Store 2024.</p>
+    </footer>
+
+    <script src="../Js/bike_Rental.js"></script>
+</body>
+</html>

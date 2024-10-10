@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="icon" type="image/jpg" href="../Images/user.png">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="myBody">
+
+    <!-- signup form startinh -->
+    <div class="signup">
+        <h1>Sign Up</h1>
+        <h4>It's takes only a minute. Join now...</h4>
+        <form id="userCreationForm">
+            <label for="createUsername">User Name</label>
+            <input type="text" name="createUsername" id="createUsername" placeholder="Enter your User name" required>
+            <label for="nicNumber">NIC Number</label>
+            <input type="number" name="nicNumber" id="nicNumber" placeholder="Enter your NIC number" required>
+            <label for="userRole">Role</label>
+                <select id="userRole" name="userRole" required>
+                    <option value="manager">Manager</option>
+                    <option value="customer">Customer</option>
+                </select>
+            <label for="mobileNumber">Mobile Number</label>
+            <input type="number" name="mobileNumber" id="mobileNumber" placeholder="Enter your mobile number" required>
+            <label for="createPassword">Password</label>
+            <input type="password"  pattern=".{8,}" name="createPassword" id="createPassword" placeholder="password min mus be 8 character">
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" pattern=".{8,}" name="confirmPassword" id="confirmPassword" placeholder="Enter your same password">
+            <!-- <input type="submit" name="" id="" value="Submit"> -->
+             <button type="submit" class="userCreateBtn">Create</button>
+        </form>
+        <p id="creationMessage" style="text-align: center;"></p>
+        <!-- <p id="errorMessage" style="color: red; text-align: center;"></p> -->
+        <!-- <p class="signupP">By clicking the sign up button, you agree to our <a class="signupP"href="#">Terms and Conditions</a> </p> -->
+    </div>
+    <p class="formPara">Already have an account? <a href="../html/login.html">Login here</a></p>
+
+    <script src="../Js/Signup.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Bikes Page</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/jpg" href="../Images/bike.png">
+
+</head>
+<body class="myBody">
+
+        <!-- Nav bar start -->
+        <nav id="myNavv" class="myNavv">
+            <div class="logo">
+                <h2>PJ'S BIKE STORE</h2>
+            </div>
+            <div class="myNav">
+                <a href="./dashBoard.html">Dashboard</a>
+                <a href="./bikeDescription.html">Bike Description </a>
+                <a href="./inventory.html">Bike Inventory</a>
+                <a href="./Request.html">Request from Customer</a>
+                <a href="./alertSystem.html">Alert System</a>
+            </div>
+        </nav>
+        <!-- Nav bar end -->
+
+
+        <!-- table for deleting -->
+
+           <table class="customersTable"  >
+            <thead>
+                <tr>
+                    <th>Bike Image</th>      
+                    <th>Bike Name</th>
+                    <th>Bike Reg No</th>
+                    <th>Bike Model</th>
+                    <th>Delete</th>
+                    <th>Edit</th>
+                </tr>
+            </thead>
+            <tbody id="deleteBikes">
+                <tr>
+                    <td><img src="" alt="" width="60" height="50"></td>
+                    <td>Royal Enfield</td>
+                    <td>001</td>
+                    <td>Petrol</td>
+                    <td><button type="submit" id="btn2" onclick="dltBike()">Delete</button></td>
+                    <td><button type="submit" class="editBtn"  onclick="ediBike()">Edit</button></td>
+                </tr>
+              
+            </tbody>
+           </table>
+
+        <script src="../Js/bike_Delete.js"></script>
+    
+</body>
+</html>
